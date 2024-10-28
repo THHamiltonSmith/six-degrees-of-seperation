@@ -70,10 +70,12 @@ The dataset used is the **Twitter Social Network** from the [SNAP dataset collec
 
 ## Data Preparation
 
-Since the SNAP dataset files are provided in a compatible CSV format, no additional data preparation script is necessary. Ensure the following structure:
 
-- `data/edges.csv` – Contains edges representing connections between Twitter users.
-- `data/nodes.csv` – Contains nodes representing Twitter users with attributes such as modularity class.
+The SNAP dataset files have been pre converted into a compatible CSV format. The file can be found in `data/twitter_edges.csv`. This can then be imported into Gephi. Alternatively you can use the already exported edges and node files.
+
+- `data/twitter_edges.csv` - Converted SNAP data, available for import into Gephi.
+- `data/edges.csv` – Exported Data from Gephi. Contains edges representing connections between Twitter users.
+- `data/nodes.csv` – Exported Data from Gephi. Contains nodes representing Twitter users with attributes such as modularity class.
 
 ## Analysis Steps
 
@@ -108,7 +110,7 @@ Since the SNAP dataset files are provided in a compatible CSV format, no additio
      - Approximate average path length and network diameter.
    
 2. **Visualization**:
-   - Use Gephi to visualize community structures by modularity class and analyze clustering. Load the `nodes.csv` and `edges.csv` files in Gephi, apply the **ForceAtlas2** layout for initial visualization, and use the modularity feature to display clusters.
+   - Use Gephi to visualize community structures by modularity class and analyze clustering. Load the `topics_twitter.csv` file into Gephi, apply the **ForceAtlas2** layout for initial visualization, and use the modularity feature to display clusters.
 
 ## References
 
